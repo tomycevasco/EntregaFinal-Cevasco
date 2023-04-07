@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 *{
-    padding: 0;
-    margin: 0;
         font-family: tilt neon, cursive;
 
 }
@@ -9,46 +7,34 @@ html{
     overflow-x: hidden;
     width: 100vw;
     height: 100vh;
+
 }
 h1{
  font-size: 3vw;
 }
 
-nav{
-display: flex;
-align-items: center;
-justify-content: space-around;
-width: 100vw;
+.nav{
+background-color: rgb(227, 169, 59);
 border: solid black 3px;
-padding: 10px 0 10px 0;
-margin-left: 5px;
-margin-right: 5px;
-grid-area: nav;
 }
-nav ul{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    grid-area: nav;
-    width: 100vw;
+.nav svg{
+    width: 100%;
+    
 }
-nav ul li {
-    display: flex;
-    justify-content: space-around;
-    word-spacing: 60px;
-    font-size: 20px;
-    grid-area: nav;
-     width: 100vw;
+.nav ul li{
+    
+    margin-right: 17em;
 }
-nav ul li a{
+
+.nav ul li a{
     display: flex;
-    word-spacing: 40px;
-    padding: 0px 120px;
-    text-decoration: none;
-    grid-area: nav;
+    flex-direction: row;
+    letter-spacing: 3px;
+    color: black;
+    
 
 }
-nav ul li a:hover{
+.nav ul li a:hover{
   color: green ; 
 }
 .img{
@@ -129,7 +115,7 @@ margin-top: 50px;
 }
 footer svg{
     fill: rgb(7, 5, 1);
-    width: 50px;
+    width: 70px;
     margin-left: 10px;
     margin-top: 20px;
   padding: 10px;
@@ -258,9 +244,9 @@ select:hover{
 @media (width < 500px){
     .contenedor{
         grid-template-columns: 100vw;
-        grid-template-rows: repeat(7,20vh);
+        grid-template-rows: repeat(6,20vh);
         grid-template-areas: 
-        "nav"
+        
         "entrada"
         "e-texto"
         "principal"
@@ -269,18 +255,9 @@ select:hover{
         "t-texto";
     
     }
-    nav ul li{
-        width: 100vw;
-    }
-    nav ul li a{
-        width: 100vw;
-word-spacing: 0;
-padding: 0;
-margin: 0;
-        
-    }
+  
     
 }
 footer{
-width: 100vw;
+width: 100%;
 }
