@@ -1,0 +1,25 @@
+{
+  "name": "c",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  style2.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomycevasco/Preentrega2-Cevasco.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomycevasco/Preentrega2-Cevasco/issues"
+  },
+  "homepage": "https://github.com/tomycevasco/Preentrega2-Cevasco#readme",
+  "dependencies": {
+    "sass": "^1.61.0"
+  }
+}

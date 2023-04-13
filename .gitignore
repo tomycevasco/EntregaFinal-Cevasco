@@ -1,3 +1,6 @@
 node_modules
 *.log
 *.vsc
+*.node_modules
+*.msi
+

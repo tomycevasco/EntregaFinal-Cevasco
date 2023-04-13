@@ -1,0 +1,24 @@
+.nav{
+background-color:$colorDeFondo;
+border: $borderBlack;
+}
+.nav svg{
+    width: 100%;
+    
+}
+.nav ul li{
+    
+    margin-right: 17em;
+}
+
+.nav ul li a{
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 3px;
+    color: black;
+    
+
+}
+.nav ul li a:hover{
+  color: $hover; 
+}
