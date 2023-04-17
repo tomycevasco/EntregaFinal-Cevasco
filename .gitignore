@@ -5,4 +5,4 @@ node_modules
 *.msi
 *.ia
 *.psd
-*.style.css.map
+style.css.map
