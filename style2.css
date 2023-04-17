@@ -1,10 +1,27 @@
-/*Colores*/
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"); /*Colores*/
 /*text-align*/
 /*Borders*/
 /*fonts*/
 /*margins*/
 /*overflows*/
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+/*extends
+
+-- es copiar y pegar una clase con algo distinto--
+
+.border {
+    border:solid black 3px;
+    backgroudn-color:red;
+    txt-align:right;
+}
+
+.border-img{
+    @extend border;
+    padding:10px;
+
+*/
+/*MAPAS
+Es para tener todos los colores o todos los radios o todos los etc
+*/
 .nav {
   background-color: rgb(227, 169, 59);
   border: solid black 3px;
@@ -29,6 +46,106 @@
   color: red;
 }
 
+footer {
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer svg:hover {
+  fill: red;
+}
+footer svg {
+  fill: rgb(7, 5, 1);
+  width: 70px;
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.pipi {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex {
+  display: flex;
+  flex-flow: column wrap; /* permite la direccion y como, wrap, nowrap. sirve para ajustarlo y que quede en la misma linea el nowrap*/
+  justify-content: start; /*como se distribuyen las imagenes, izquierda derecha espaciado */
+  align-items: start; /*eje vertical, como se posicionan en relacion a su height, arriba en el medio o abajo*/
+}
+
+.productos-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.productos-flex figure {
+  border: solid black 2px;
+  padding: 20px;
+  background-color: beige;
+}
+
+.productos-flex figure figcaption {
+  text-align: center;
+}
+
+.productos-flex figure button {
+  background-color: rgb(129, 129, 5);
+  color: white;
+  border-radius: 5px;
+}
+
+.tt select {
+  width: 15vw;
+}
+
+.none li ::before {
+  content: "-";
+  position: relative;
+  left: -5px;
+}
+
+.none li {
+  list-style: none;
+}
+
+select {
+  background-color: rgb(255, 253, 252);
+  border-radius: 5px;
+  color: rgb(25, 4, 4);
+}
+
+select:hover {
+  color: rgb(14, 237, 92);
+  border-radius: 3px;
+}
+
+form button {
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  footer {
+    width: 100vw;
+    height: 100vh;
+  }
+  footer svg {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .pipi {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
 * {
   font-family: tilt neon, cursive;
 }
@@ -45,10 +162,6 @@ h1 {
 
 .bg-color {
   background-color: rgb(227, 169, 59);
-}
-
-.bg-color2 {
-  background-color: green;
 }
 
 .text-center {
@@ -76,97 +189,6 @@ h1 {
   border: solid black 3px;
 }
 
-.flex {
-  display: flex;
-  flex-flow: column wrap; /* permite la direccion y como, wrap, nowrap. sirve para ajustarlo y que quede en la misma linea el nowrap*/
-  justify-content: start; /*como se distribuyen las imagenes, izquierda derecha espaciado */
-  align-items: start; /*eje vertical, como se posicionan en relacion a su height, arriba en el medio o abajo*/
-}
-
-.order1 {
-  order: 1;
-}
-
-.productos-flex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.productos-flex figure {
-  border: solid black 2px;
-  padding: 20px;
-  background-color: beige;
-}
-
-.productos-flex figure figcaption {
-  text-align: center;
-}
-
-.productos-flex figure button {
-  background-color: rgb(129, 129, 5);
-  color: white;
-  border-radius: 10px;
-}
-
-.pipi {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-footer svg {
-  fill: rgb(7, 5, 1);
-  width: 70px;
-  margin-left: 10px;
-  margin-top: 20px;
-  padding: 10px;
-}
-
-.dejanos {
-  padding-bottom: 50px;
-  font-size: 30px;
-}
-
-header ul li {
-  list-style: none;
-  text-align: right;
-  border-radius: 4px;
-}
-
-.font-size1 {
-  font-size: 20px;
-}
-
-.tt select {
-  width: 15vw;
-}
-
-.none li ::before {
-  content: "-";
-  position: relative;
-  left: -5px;
-}
-
-.none li {
-  list-style: none;
-}
-
-select {
-  background-color: rgb(255, 253, 252);
-  border-radius: 10px;
-  color: rgb(25, 4, 4);
-}
-
-select:hover {
-  color: rgb(14, 237, 92);
-  border-radius: 3px;
-}
-
-footer {
-  width: 100%;
-  margin-top: 50px;
-}
-
 .card-text svg {
   color: gold;
 }
@@ -176,29 +198,24 @@ footer {
   width: 50%;
 }
 
-@media (max-width: 500px) {
-  footer {
-    width: 100vw;
-    height: 100vh;
-  }
-  footer svg {
-    display: flex;
-    flex-flow: row nowrap;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  .pipi {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  .text-center a img {
-    width: 90px;
-  }
+.text-center a img {
+  width: 90px;
+}
+
+.cursor {
+  cursor: alias;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: black;
+  font-family: tilt neon, cursive;
+  text-align: center;
+}
+
+.bandera {
+  background-image: url(../img/Bandera\ arg.png);
 }
 
 /*# sourceMappingURL=style2.css.map */

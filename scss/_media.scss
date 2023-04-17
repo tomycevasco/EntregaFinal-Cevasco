@@ -1,0 +1,21 @@
+@media (max-width:500px){
+footer{
+    width: 100vw;
+    height: 100vh;
+}
+footer svg{
+    display: flex;
+    flex-flow: row nowrap;
+}
+h1{
+    font-size: 20px;
+}
+.pipi{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+}

@@ -3,4 +3,6 @@ node_modules
 *.vsc
 *.node_modules
 *.msi
-
+*.ia
+*.psd
+*.style.css.map

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import "_vars";
+@import "_mixings";
 @import "nav";
 @import "_footer";
 @import "_merchandising";
+@import "_media";
 
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
 *{
     font-family:$mainFont;
 }
@@ -19,9 +22,7 @@ h1{
     background-color:$colorDeFondo;
     
 }
-.bg-color2{
-    background-color:green;    
-}
+
 .text-center{
     text-align: $textCenter;
 }
@@ -41,89 +42,7 @@ h1{
 .contenedor2{
     border: $borderBlack;
 }
-.flex{
-    display: flex;
-   flex-flow:column wrap;/* permite la direccion y como, wrap, nowrap. sirve para ajustarlo y que quede en la misma linea el nowrap*/
-   justify-content:start;/*como se distribuyen las imagenes, izquierda derecha espaciado */
-   align-items:start;/*eje vertical, como se posicionan en relacion a su height, arriba en el medio o abajo*/
-}
-.order1{
-    order: 1;
-}
 
-
-.productos-flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-.productos-flex figure{
-    border: solid black 2px;
-    padding: 20px;
-    background-color: beige;
-   
-
-    
-}
-.productos-flex figure figcaption{
-    text-align: center;
-}
-.productos-flex figure button{
-    background-color: $figureButton;
-    color: white;
-    border-radius: $figureBorderRadius;
-
-}
-
-.pipi{
-    display: flex;
-    flex-wrap: nowrap;
-
-}
-footer svg{
-    fill: rgb(7, 5, 1);
-    width: 70px;
-    margin-left: 10px;
-    margin-top: 20px;
-  padding: 10px;
-}
-
-.dejanos{
-    padding-bottom: 50px;
-    font-size: 30px;
-    
-}
-
-.font-size1{
-    font-size: 20px;
-    
-}
-
-.tt select{
-    width: 15vw;
-
-}
-.none li ::before{
-     content:"-"; position:relative; left:-5px;
-}
-.none li{
-    list-style: none;
-}
-
-select{
-    background-color:rgb(255, 253, 252);
-    border-radius: $figureBorderRadius;
-    color:rgb(25, 4, 4);
-}
-select:hover{
-    color: rgb(14, 237, 92);
-    border-radius: 3px;
-}
-footer{
-width: 100%;
-margin-top: $marginM;
-}
 .card-text svg{
     color: gold;
 }
@@ -131,26 +50,8 @@ margin-top: $marginM;
     margin: 0 auto;
     width: 50%;
 }
-@media (max-width:500px){
-footer{
-    width: 100vw;
-    height: 100vh;
-}
-footer svg{
-    display: flex;
-    flex-flow: row nowrap;
-}
-h1{
-    font-size: 20px;
-}
-.pipi{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
+
+
 .text-center{
     a{
         img{
@@ -158,4 +59,15 @@ h1{
         }
     }
 }
+
+.cursor{
+    cursor: alias;
+}
+
+p{
+    @include textos (1em, 1.5em, black, center);
+}
+.bandera{
+    @if $lang == arg {background-image: url(../img/Bandera\ arg.png);}
+    @else if $lang == usa {background-image: url(../img/Bandera\ usa.png);}
 }

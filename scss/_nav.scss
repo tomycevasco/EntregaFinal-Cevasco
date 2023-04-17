@@ -20,5 +20,5 @@ border: $borderBlack;
 
 }
 .nav ul li a:hover{
-  color: $hover; 
+  color: map-get($map: $paletaDeRojos, $key: uno ); 
 }

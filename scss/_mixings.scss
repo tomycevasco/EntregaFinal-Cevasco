@@ -1,0 +1,46 @@
+/*extends
+
+-- es copiar y pegar una clase con algo distinto--
+
+.border {
+    border:solid black 3px;
+    backgroudn-color:red;
+    txt-align:right;
+}
+
+.border-img{
+    @extend border;
+    padding:10px;
+
+*/
+@mixin textos ($size, $line, $color,$align){
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    font-family: $mainFont;
+    @if $align == center {text-align: center;}
+    @else if $align == right {text-align: right;}
+    @else if $align == left {text-align: left;}
+}
+
+@mixin flex($direction,$align,$wrap){
+display: flex;
+flex-direction: $direction;
+align-items: $align;
+flex-wrap: $wrap;
+}
+/*MAPAS
+Es para tener todos los colores o todos los radios o todos los etc
+*/
+
+$paletaDeRojos:(
+    "uno":red,
+    "dos":rgb(120, 18, 18),
+    "tres":rgb(234, 115, 115),
+    "cuatro":rgb(93, 38, 38),
+
+);
+
+
+
+
