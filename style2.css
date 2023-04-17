@@ -145,6 +145,10 @@ form button {
     margin: 0;
     padding: 0;
   }
+  .col-md-6 svg {
+    width: 35px;
+    height: 45px;
+  }
 }
 * {
   font-family: tilt neon, cursive;
@@ -216,6 +220,35 @@ p {
 
 .bandera {
   background-image: url(../img/Bandera\ arg.png);
+}
+
+.form-contenedor {
+  background-color: white;
+  border: solid black 3px;
+  margin: 1em;
+  padding: 1em;
+}
+
+.col-md-6 svg {
+  fill: rgb(3, 3, 142);
+}
+
+article {
+  background: url(img/FondoMadera.png);
+  background-repeat: repeat;
+  margin: 2em;
+  color: rgb(255, 213, 0);
+  border: solid burlywood 2px;
+}
+article section ul li {
+  list-style: none;
+  padding-top: 1em;
+  color: white;
+}
+article section ul li::before {
+  content: "-";
+  position: relative;
+  left: -5px;
 }
 
 /*# sourceMappingURL=style2.css.map */

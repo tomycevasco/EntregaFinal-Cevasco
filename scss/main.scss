@@ -16,7 +16,7 @@ html{
     height: 100vh;
 }
 h1{
- font-size: $h1Size;
+ font-size: $h1Size ;
 }
 .bg-color{
     background-color:$colorDeFondo;
@@ -70,4 +70,37 @@ p{
 .bandera{
     @if $lang == arg {background-image: url(../img/Bandera\ arg.png);}
     @else if $lang == usa {background-image: url(../img/Bandera\ usa.png);}
+}
+.form-contenedor{
+    background-color: white;
+    border: $borderBlack;
+margin: 1em;
+padding: 1em;
+}
+.col-md-6{
+    svg{
+        fill: rgb(3, 3, 142);
+    }
+}
+article {
+   background:url(img/FondoMadera.png);
+   background-repeat: repeat;
+   margin: 2em;
+color: rgb(255, 213, 0);
+border: solid burlywood 2px;
+    section {
+
+    ul{
+        li{
+            list-style: none;
+            padding-top:1em;
+            color: white;
+        }
+        li::before{
+            content:"-"; position:relative; left:-5px;
+
+
+        }
+    }
+}
 }
