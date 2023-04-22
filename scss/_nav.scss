@@ -20,5 +20,9 @@ border: $borderBlack;
 
 }
 .nav ul li a:hover{
-  color: map-get($map: $paletaDeRojos, $key: uno ); 
+  color: map-get($map: $paletaDeRojos, $key: cinco ); 
+  background-color: rgb(73, 59, 59);
+  border-radius: 5px;
+  transform: scale(1.08);
+  transition: all 0.7s;
 }

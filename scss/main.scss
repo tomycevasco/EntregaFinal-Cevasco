@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import "_vars";
 @import "_mixings";
 @import "nav";
@@ -6,22 +8,35 @@
 @import "_merchandising";
 @import "_media";
 
-
+.border-radius{
+    border-radius: $figureBorderRadius;
+}
 *{
     font-family:$mainFont;
 }
 html{
     overflow-x: $overflow-x;
-    width: 100vw;
+    width: 98.7vw;
     height: 100vh;
 }
 h1{
  font-size: $h1Size ;
 }
+h4{
+    font-size: 10vw 10vh;
+
+}
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+}
+h3{
+    font-family: 'Pacifico', cursive;
+}
 .bg-color{
     background-color:$colorDeFondo;
-    
 }
+
 
 .text-center{
     text-align: $textCenter;
@@ -72,6 +87,9 @@ p{
     @else if $lang == usa {background-image: url(../img/Bandera\ usa.png);}
 }
 .form-contenedor{
+    button{
+        margin-top: 10px;
+    }
     background-color: white;
     border: $borderBlack;
 margin: 1em;
@@ -103,4 +121,7 @@ border: solid burlywood 2px;
         }
     }
 }
+}
+.t{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }

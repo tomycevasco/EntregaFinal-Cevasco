@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"); /*Colores*/
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/*Colores*/
 /*text-align*/
 /*Borders*/
 /*fonts*/
@@ -22,6 +25,7 @@
 /*MAPAS
 Es para tener todos los colores o todos los radios o todos los etc
 */
+@keyframes button {}
 .nav {
   background-color: rgb(227, 169, 59);
   border: solid black 3px;
@@ -43,7 +47,11 @@ Es para tener todos los colores o todos los radios o todos los etc
 }
 
 .nav ul li a:hover {
-  color: red;
+  color: white;
+  background-color: rgb(73, 59, 59);
+  border-radius: 5px;
+  transform: scale(1.08);
+  transition: all 0.7s;
 }
 
 footer {
@@ -60,6 +68,7 @@ footer svg {
   margin-left: 10px;
   margin-top: 20px;
   padding: 10px;
+  transform: translateY(-27px);
 }
 
 .pipi {
@@ -69,15 +78,15 @@ footer svg {
 
 .flex {
   display: flex;
-  flex-flow: column wrap; /* permite la direccion y como, wrap, nowrap. sirve para ajustarlo y que quede en la misma linea el nowrap*/
-  justify-content: start; /*como se distribuyen las imagenes, izquierda derecha espaciado */
-  align-items: start; /*eje vertical, como se posicionan en relacion a su height, arriba en el medio o abajo*/
+  flex-flow: column wrap;
+  justify-content: start;
+  align-items: start;
 }
 
 .productos-flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .productos-flex figure {
@@ -125,6 +134,14 @@ form button {
   border-radius: 5px;
 }
 
+.bg-merch {
+  background: linear-gradient(to bottom, rgb(215, 180, 114), rgb(227, 169, 59));
+}
+
+.bg-merch1 {
+  background: linear-gradient(to top, rgb(215, 180, 114), rgb(227, 169, 59));
+}
+
 @media (max-width: 500px) {
   footer {
     width: 100vw;
@@ -150,18 +167,35 @@ form button {
     height: 45px;
   }
 }
+.border-radius {
+  border-radius: 5px;
+}
+
 * {
   font-family: tilt neon, cursive;
 }
 
 html {
   overflow-x: hidden;
-  width: 100vw;
+  width: 98.7vw;
   height: 100vh;
 }
 
 h1 {
   font-size: 3vw;
+}
+
+h4 {
+  font-size: 10vw 10vh;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+}
+
+h3 {
+  font-family: "Pacifico", cursive;
 }
 
 .bg-color {
@@ -228,6 +262,9 @@ p {
   margin: 1em;
   padding: 1em;
 }
+.form-contenedor button {
+  margin-top: 10px;
+}
 
 .col-md-6 svg {
   fill: rgb(3, 3, 142);
@@ -249,6 +286,10 @@ article section ul li::before {
   content: "-";
   position: relative;
   left: -5px;
+}
+
+.t {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style2.css.map */

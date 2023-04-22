@@ -1,16 +1,18 @@
 .flex{
     display: flex;
-   flex-flow:column wrap;/* permite la direccion y como, wrap, nowrap. sirve para ajustarlo y que quede en la misma linea el nowrap*/
-   justify-content:start;/*como se distribuyen las imagenes, izquierda derecha espaciado */
-   align-items:start;/*eje vertical, como se posicionan en relacion a su height, arriba en el medio o abajo*/
+   flex-flow:column wrap;
+   justify-content:start;
+   align-items:start;
 }
 
 .productos-flex{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+  
+   
     
-}
+}   
 .productos-flex figure{
     border: solid black 2px;
     padding: 20px;
@@ -50,5 +52,13 @@ select:hover{
 form{
     button{
         border-radius: $figureBorderRadius;
+       
+
     }
+}
+.bg-merch{
+ background: linear-gradient(to bottom, rgb(215, 180, 114) , $colorDeFondo);
+}
+.bg-merch1{
+    background: linear-gradient(to top,rgb(215, 180, 114) , $colorDeFondo );
 }
