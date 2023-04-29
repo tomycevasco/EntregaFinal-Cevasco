@@ -127,36 +127,23 @@ form button:hover {
   background: linear-gradient(to top, rgb(215, 180, 114), rgb(227, 169, 59));
 }
 
-.t1 {
-  grid-area: 1;
-}
-
-.t2 {
-  grid-area: 2;
-}
-
-.t3 {
-  grid-area: 3;
-}
-
-.t4 {
-  grid-area: 4;
-}
-
-.t5 {
-  grid-area: 5;
-}
-
-.t6 {
-  grid-area: 6;
-}
-
-.t7 {
-  grid-area: 7;
-}
-
 .ttt {
+  display: flex;
+  flex-flow: row wrap;
+}
+.ttt img {
+  width: 300px;
+  height: 300px;
+}
+
+.gridss {
   display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 50% 50%;
+}
+
+.sidebar {
+  display: block;
 }
 
 @media (max-width: 500px) {
@@ -182,11 +169,21 @@ form button:hover {
   nav ul {
     margin: 0px;
   }
-  .ttt {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas: "1" "2" "3" "4" "5" "6" "7";
+  .tt select {
+    justify-content: center;
+  }
+  .gridss {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .sidebar {
+    display: none;
+  }
+  .ttt img {
+    width: 270px;
+  }
+  .ttt figure {
+    width: 320px;
   }
 }
 .border-radius {
