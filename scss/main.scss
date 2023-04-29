@@ -122,6 +122,13 @@ border: solid burlywood 2px;
     }
 }
 }
-.t{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.error{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    button{
+        background-color: blue;
+        color: white;
+    }
 }

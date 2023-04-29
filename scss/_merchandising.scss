@@ -22,16 +22,22 @@
     
 }
 .productos-flex figure figcaption{
-    text-align: center;
+    text-align: center; 
 }
+
 .productos-flex figure button{
+    &:hover{
+        cursor: pointer;
+    }
     background-color: $figureButton;
     color: white;
     border-radius: $figureBorderRadius;
+   
 
 }
 .tt select{
     width: 15vw;
+
 
 }
 .none li ::before{
@@ -52,7 +58,9 @@ select:hover{
 form{
     button{
         border-radius: $figureBorderRadius;
-       
+       &:hover{
+        cursor: pointer;
+       }
 
     }
 }
@@ -61,4 +69,29 @@ form{
 }
 .bg-merch1{
     background: linear-gradient(to top,rgb(215, 180, 114) , $colorDeFondo );
+}
+
+.t1{
+    grid-area: 1;
+}
+.t2{
+    grid-area: 2;
+}
+.t3{
+    grid-area: 3;
+}
+.t4{
+    grid-area: 4;
+}
+.t5{
+    grid-area: 5;
+}
+.t6{
+    grid-area: 6;
+}
+.t7{
+    grid-area: 7;
+}
+.ttt{
+    display: grid;
 }

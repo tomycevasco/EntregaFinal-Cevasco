@@ -1,18 +1,4 @@
-/*extends
 
--- es copiar y pegar una clase con algo distinto--
-
-.border {
-    border:solid black 3px;
-    backgroudn-color:red;
-    txt-align:right;
-}
-
-.border-img{
-    @extend border;
-    padding:10px;
-
-*/
 @mixin textos ($size, $line, $color,$align){
     font-size: $size;
     line-height: $line;
@@ -45,6 +31,3 @@ $paletaDeRojos:(
 
 
 
-@keyframes button{
-    
-}

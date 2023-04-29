@@ -1,28 +1,26 @@
 .nav{
-background-color:$colorDeFondo;
-border: $borderBlack;
-}
-.nav svg{
+    svg{
     width: 100%;
     
 }
-.nav ul li{
-    
-    margin-right: 17em;
-}
 
-.nav ul li a{
-    display: flex;
-    flex-direction: row;
-    letter-spacing: 3px;
+    ul li{
+    a{
+    letter-spacing:2px;
     color: black;
-    
-
-}
-.nav ul li a:hover{
-  color: map-get($map: $paletaDeRojos, $key: cinco ); 
+   
+    &:hover{
+        color: map-get($map: $paletaDeRojos, $key: cinco ); 
   background-color: rgb(73, 59, 59);
   border-radius: 5px;
   transform: scale(1.08);
-  transition: all 0.7s;
+  transition: all 0.4s;
+}
+}
+margin-right: 17em;
+    
+}
+background-color:$colorDeFondo;
+border: $borderBlack;
+
 }

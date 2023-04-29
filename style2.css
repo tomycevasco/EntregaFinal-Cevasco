@@ -7,58 +7,34 @@
 /*fonts*/
 /*margins*/
 /*overflows*/
-/*extends
-
--- es copiar y pegar una clase con algo distinto--
-
-.border {
-    border:solid black 3px;
-    backgroudn-color:red;
-    txt-align:right;
-}
-
-.border-img{
-    @extend border;
-    padding:10px;
-
-*/
 /*MAPAS
 Es para tener todos los colores o todos los radios o todos los etc
 */
-@keyframes button {}
 .nav {
   background-color: rgb(227, 169, 59);
   border: solid black 3px;
 }
-
 .nav svg {
   width: 100%;
 }
-
 .nav ul li {
   margin-right: 17em;
 }
-
 .nav ul li a {
-  display: flex;
-  flex-direction: row;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: black;
 }
-
 .nav ul li a:hover {
   color: white;
   background-color: rgb(73, 59, 59);
   border-radius: 5px;
   transform: scale(1.08);
-  transition: all 0.7s;
+  transition: all 0.4s;
 }
 
 footer {
-  width: 100%;
   margin-top: 50px;
 }
-
 footer svg:hover {
   fill: red;
 }
@@ -69,6 +45,9 @@ footer svg {
   margin-top: 20px;
   padding: 10px;
   transform: translateY(-27px);
+}
+footer svg section {
+  margin-top: 10em;
 }
 
 .pipi {
@@ -104,6 +83,9 @@ footer svg {
   color: white;
   border-radius: 5px;
 }
+.productos-flex figure button:hover {
+  cursor: pointer;
+}
 
 .tt select {
   width: 15vw;
@@ -133,6 +115,9 @@ select:hover {
 form button {
   border-radius: 5px;
 }
+form button:hover {
+  cursor: pointer;
+}
 
 .bg-merch {
   background: linear-gradient(to bottom, rgb(215, 180, 114), rgb(227, 169, 59));
@@ -142,10 +127,41 @@ form button {
   background: linear-gradient(to top, rgb(215, 180, 114), rgb(227, 169, 59));
 }
 
+.t1 {
+  grid-area: 1;
+}
+
+.t2 {
+  grid-area: 2;
+}
+
+.t3 {
+  grid-area: 3;
+}
+
+.t4 {
+  grid-area: 4;
+}
+
+.t5 {
+  grid-area: 5;
+}
+
+.t6 {
+  grid-area: 6;
+}
+
+.t7 {
+  grid-area: 7;
+}
+
+.ttt {
+  display: grid;
+}
+
 @media (max-width: 500px) {
   footer {
     width: 100vw;
-    height: 100vh;
   }
   footer svg {
     display: flex;
@@ -158,13 +174,19 @@ form button {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
   }
   .col-md-6 svg {
     width: 35px;
     height: 45px;
+  }
+  nav ul {
+    margin: 0px;
+  }
+  .ttt {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: "1" "2" "3" "4" "5" "6" "7";
   }
 }
 .border-radius {
@@ -288,8 +310,15 @@ article section ul li::before {
   left: -5px;
 }
 
-.t {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.error {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.error button {
+  background-color: blue;
+  color: white;
 }
 
 /*# sourceMappingURL=style2.css.map */

@@ -1,8 +1,4 @@
 footer{
-width: 100%;
-margin-top: $marginM;
-}
-footer{
   svg:hover{
     fill: red;
   }
@@ -13,8 +9,13 @@ footer{
     margin-top: 20px;
   padding: 10px;
   transform: translateY(-27px);
- 
-}}
+  section{
+        margin-top: 10em;
+    }
+
+  }
+  margin-top: $marginM;
+}
 
 .pipi{
     display: flex;
